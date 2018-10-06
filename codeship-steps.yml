@@ -4,8 +4,8 @@
 - name: deploy
   tag: master
   service: codeship-heroku-deployment
-  command: codeship_heroku deploy /deploy php-laravel-todoapp
+  command: codeship_heroku deploy /deploy secure-lowlands-55592
 - name: migrate
   tag: master
   service: codeship-heroku-deployment
-  command: heroku run --app php-laravel-todoapp -- php artisan migrate --no-interaction
+  command: heroku run --app secure-lowlands-55592 -- php artisan migrate --no-interaction
